@@ -3,7 +3,7 @@ const env = require("./environment");
 
 const sendEmailToAdmin = async (data) => {
 
-    const { user_email, message } = data;
+    const { name, message } = data;
     const transporter = nodemailer.createTransport({
         service: 'gmail',
         auth: {
@@ -15,13 +15,16 @@ const sendEmailToAdmin = async (data) => {
     const mailOptions = {
         from: env.SYSTEM_EMAIL_ID,
         to: env.ADMIN_EMAIL_ID,
-        subject: "Contact us mail from " + user_email,
+        subject: "Contact us mail from " + name,
         text: message,
     };
 
     transporter.sendMail(mailOptions, function (error, info) {
         if (error) {
+            console.log('error --> ', error)
             throw Error("Errow while sending email");
+        }else{
+            console.log('info ---> ', info)
         }
     });
 };
