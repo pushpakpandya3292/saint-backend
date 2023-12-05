@@ -1,0 +1,20 @@
+{
+  "development": {
+    "use_env_variable": false,
+    "username": "root",
+    "password": null,
+    "database": "saint_backend",
+    "host": "localhost",
+    "dialect": "mysql",
+    "logging": true
+  },
+  "production": {
+    "use_env_variable": false,
+    "username": "root",
+    "password": null,
+    "database": "saint_backend",
+    "host": "localhost",
+    "dialect": "mysql",
+    "logging": true
+  }
+}
