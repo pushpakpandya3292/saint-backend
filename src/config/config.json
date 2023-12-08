@@ -1,19 +1,19 @@
 {
   "development": {
     "use_env_variable": false,
-    "username": "root",
-    "password": null,
-    "database": "saint_backend",
-    "host": "localhost",
+    "username": "dbmasteruser",
+    "password": "0DX2f!e8aFO.7N2m,4y<vYCNK8C5koRK",
+    "database": "dbmaster",
+    "host": "ls-f828f19cf02554dd0e7ad659e6f28ecaee54cea4.c6pcoxnkqcnx.eu-west-2.rds.amazonaws.com",
     "dialect": "mysql",
     "logging": true
   },
   "production": {
     "use_env_variable": false,
-    "username": "root",
-    "password": null,
-    "database": "saint_backend",
-    "host": "localhost",
+    "username": "dbmasteruser",
+    "password": "0DX2f!e8aFO.7N2m,4y<vYCNK8C5koRK",
+    "database": "dbmaster",
+    "host": "ls-f828f19cf02554dd0e7ad659e6f28ecaee54cea4.c6pcoxnkqcnx.eu-west-2.rds.amazonaws.com",
     "dialect": "mysql",
     "logging": true
   }
